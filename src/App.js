@@ -55,7 +55,7 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-              <div className="row">
+              <div className="row" style={{padding:'20px'}}>
                 {songs}
               </div>
             </div>
