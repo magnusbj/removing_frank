@@ -35,7 +35,7 @@ class App extends Component {
       render() {
         let songs = this.state.data.map(song=>{
           return (
-            <div className="col-md-2" key={song._id}><SongCard flash={(BPM)=>this.flash(BPM)} song={song} setActiveSong={this.setActiveSong}/></div>
+            <div className="col" key={song._id}><SongCard flash={(BPM)=>this.flash(BPM)} song={song} setActiveSong={this.setActiveSong}/></div>
             )
           })
           let {data, ...other} = this.state
@@ -55,7 +55,7 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-              <div className="row" style={{padding:'20px'}}>
+              <div className="row">
                 {songs}
               </div>
             </div>
